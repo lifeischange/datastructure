@@ -1,5 +1,6 @@
 # ifndef _LIST_H
 
+typedef int ElementType;
 struct Node;
 typedef struct Node *PtrToNode;
 typedef PtrToNode List;
@@ -9,14 +10,10 @@ List MakeEmpty(List L);
 int IsEmpty(List L);
 int IsLast(Position P,List L);
 Position Find(ElementType X,List L);
-Void Delete(ElementType X,List L);
+void Delete(ElementType X,List L);
 Position FindPrevious(ElementType X,List L);
 void Insert(ElementType X,List L);
 void DeleteList(List L);
-Position Head(List L);
-Position First(List L);
-Position Advance(Position P);
-ElementType Retrieve(Position P);
 
 # endif
 
