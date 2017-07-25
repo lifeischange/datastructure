@@ -2,6 +2,7 @@
 
 typedef int ElementType;
 struct Node;
+typedef struct Node Root;
 typedef struct Node *PtrToNode;
 typedef PtrToNode List;
 typedef PtrToNode Position;
